@@ -38,8 +38,13 @@ export default {
       })
     }
   },
-  created () {
+  mounted () {
     this.categoryBlog()
+  },
+  watch: {
+    $route (to, from) {
+      this.categoryBlog()
+    }
   }
 }
 </script>

@@ -145,10 +145,10 @@ export default {
     this.categoryBlog()
   },
   filters: {
-    strippedContent: function(string) {
-           return string.replace(/<\/?[^>]+>/ig,' '); 
+    strippedContent: function (string) {
+      return string.replace(/<\/?[^>]+>/ig, ' ')
     }
-}
+  }
 }
 </script>
 
